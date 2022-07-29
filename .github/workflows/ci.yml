@@ -19,9 +19,6 @@ jobs:
       - name: Install modules
         run: npm install
 
-      - name: Run pwd
-        run: pwd
-
       - name: Run ESLint
         run: npm run lint
 
