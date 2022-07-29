@@ -1,43 +1,28 @@
-# Getting Started with Create React App
+# React001
+
+Display list of posts about React fetched from Stack Overflow
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Availability checked on desktop browsers:
+- Chrome
+- Firefox
+- Opera
+- Microsoft Edge
+- Internet Explorer 11
 
-In the project directory, you can run:
+## How to launch the app on your computer
 
-### `npm start`
+- Install Node.js from official website if you don't have it [Latest version](https://nodejs.org/en/)
+- Copy files from the repository to you machine `git clone https://github.com/astgrey101/react101.git`
+- Navigate to the root folder of cloned files and open it in terminal
+- Run command `npm install` and wait until execution finished
+- Run command `npm start`. App will be launched and [http://localhost:3000](http://localhost:3000) url will be opened automatically in the browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to use the app
+- #### Open the app in your browser. List of posts about React from Stack overflow will be loaded. The list is already filtered answered posts and by owner reputation higher than 50.
+- #### To navigate to original post just click on accordance list item
+- #### In order to sort posts list by creation date click on the button "Sort by creation date" in the left corner of the page
 
 ## Learn More
 
