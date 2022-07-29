@@ -1,0 +1,35 @@
+name: Deploy React001 App
+
+on:
+  push:
+    branches: '**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Install modules
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint
+
+      - name: Run Tests
+        run: npm run test
+
+      - name: Build App
+        run: npm run build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages # The branch the action should deploy to
+          folder: build # The folder the action should deploy
